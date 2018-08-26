@@ -1,6 +1,9 @@
-var Logger = require('./Logger')
+// Method 1
+// var Logger = require('./Logger')
+// var logger = new Logger().getInstacse()
 
-var logger = new Logger().getInstacse()
+// Method 2
+const logger = require('./Logger')
 
 class Store {
   constructor (name, inventory = []) {

@@ -6,6 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Odvin/js-patterns.git"
+  },
+  "keywords": ["Patterns", "JS", "Node"],
   "author": "Dmytro Ovchynnykov",
   "license": "ISC",
   "devDependencies": {

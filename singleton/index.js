@@ -1,8 +1,12 @@
-const Logger = require('./Logger')
 const Store = require('./Store')
 const Shopper = require('./Shopper')
 
-const logger = new Logger().getInstacse()
+// Method 1
+// const Logger = require('./Logger')
+// const logger = new Logger().getInstacse()
+
+// Method 2
+const logger = require('./Logger')
 
 logger.log('Start app ...')
 const alex = new Shopper('alex', 500)
