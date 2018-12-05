@@ -1,16 +1,18 @@
 const Store = require('./Store')
 const Shopper = require('./Shopper')
-
-// Method 1
-// const Logger = require('./Logger')
-// const logger = new Logger().getInstacse()
-
-// Method 2
+// The instance of logger is imported
+// Singleton lets us to work with the same instance of the Logger
 const logger = require('./Logger')
 
+// First time we use singleton
 logger.log('Start app ...')
-const alex = new Shopper('alex', 500)
-const skiShop = new Store('Good Supplies', [
+
+// Inside class constructor Shopper the same instance of logger is used
+const firstCustomer = new Shopper('Vladyslav', 500)
+const secondCustomer = new Shopper('Jeck', 100)
+
+// Inside class constructor Store the same instance of logger is used
+const someShop = new Store('Good Supplies', [
   {
     item: 'First item mane',
     qty: 5,
@@ -23,9 +25,14 @@ const skiShop = new Store('Good Supplies', [
   }
 ])
 
-console.log(`Shopper: ${alex.name} goes to ${skiShop.name}`)
+// default logger
+console.log(`Shopper: ${firstCustomer.name} goes to ${someShop.name}`)
+console.log(`Shopper: ${secondCustomer.name} goes to ${someShop.name}`)
 
+// custom logger
 logger.log('Finishing app ....')
 
+// how many times singleton was used
 console.log(`${logger.count} logs total`)
+// all singleton's messages
 logger.logs.map(log => console.log(` ${log.message}`))

@@ -14,20 +14,12 @@ class Logger {
   }
 }
 
-// Method 1. Creating singleton throw new class
-// class Singleton {
-//   constructor () {
-//     if (!Singleton.instanse) {
-//       Singleton.instanse = new Logger()
-//     }
-//   }
+// Logger has to be a singleton
+// That's why the instance of Logger is exported
 
-//   getInstacse () {
-//     return Singleton.instanse
-//   }
-// }
+// it is important to export instance of the class
+// ---> module.exports = new Logger() <--- use this for singleton
+// but not the class Logger
+//  ---> module.exports = Logger <--- don't use this for singleton
 
-// module.exports = Singleton
-
-// Method 2. Exporting instance. It is created when the file is running then cashed.
 module.exports = new Logger()
