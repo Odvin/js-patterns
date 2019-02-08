@@ -21,9 +21,14 @@ class Scout {
   }
 
   clone () {
+    // Get all methods of the class
+    // "or ger this class prototype"
     const proto = Object.getPrototypeOf(this)
+
+    // Create object with defined prototype
     const cloned = Object.create(proto)
 
+    // Copy all attributes
     cloned._name = this._name
     cloned._shoppingList = [...this._shoppingList]
 
