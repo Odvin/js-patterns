@@ -16,3 +16,8 @@ For classes use inheritance.
 
 ### Factory Pattern
 Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Methods lets a class defer instantiation to subclasses.
+
+## Structural
+
+### Adapter Pattern 
+Convert the interface of a class into another clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.

@@ -10,15 +10,19 @@
     "type": "git",
     "url": "https://github.com/Odvin/js-patterns.git"
   },
-  "keywords": ["Patterns", "JS", "Node"],
+  "keywords": [
+    "Patterns",
+    "JS",
+    "Node"
+  ],
   "author": "Dmytro Ovchynnykov",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^5.4.0",
+    "eslint": "^5.13.0",
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^3.1.0"
   }
 }
