@@ -30,3 +30,8 @@ Compose objects into tree structures to represent part-whole hierarchies. Compos
 
 ### Decorator
 Attach additional responsibilities to an object dynamically/ Decorators provide a flexible alternative to subclassing for extending functionality.
+
+## Behavioral
+
+### Chain Of Responsibility
+Avoid coupling the sender of a request to its receiver by giving more than one object of a change to handle the request. Chain the receiving objects and pass the request along the chain.
