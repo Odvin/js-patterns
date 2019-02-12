@@ -27,3 +27,6 @@ Provide a surrogate or palceholder for another object to control access to it.
 
 ### Composites
 Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+
+### Decorator
+Attach additional responsibilities to an object dynamically/ Decorators provide a flexible alternative to subclassing for extending functionality.
