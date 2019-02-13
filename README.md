@@ -35,3 +35,6 @@ Attach additional responsibilities to an object dynamically/ Decorators provide 
 
 ### Chain Of Responsibility
 Avoid coupling the sender of a request to its receiver by giving more than one object of a change to handle the request. Chain the receiving objects and pass the request along the chain.
+
+### Command
+Encapsulate a request as an object, thereby letting you parameterize with different request. queue or log requests, and support undoable operations.
