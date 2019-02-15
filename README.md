@@ -41,3 +41,6 @@ Encapsulate a request as an object, thereby letting you parameterize with differ
 
 ### Iterator
 Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representations.
+
+### Observer
+Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
